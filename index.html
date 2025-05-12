@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Urban Apparel</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
+    <script src="favicon.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div id="menu-sidebar" class="menu-sidebar">
+            <button id="close-menu-btn" class="close-btn">×</button>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product-page.html">Products</a></li>
+                <li><a href="index.html#contact-form">Contact</a></li>
+            </ul>
+        </div>
+        <button id="menu-btn" class="menu-btn">☰</button>
+        <header>
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="index.html">URBAN APPAREL</a>
+                </div>
+                <div class="cart">
+                    <button id="cart-btn" class="cart-btn">🛒</button>
+                </div>
+            </nav>
+        </header>
+    </div>
+    
+    <div class="main-content">
+        <div class="carousel" id="carousel">
+            <!-- Banner Images -->
+            <img alt="banner1" class="active" height="300" src="./images/banner/c9055ea7-fdcf-4835-a130-723dd2aaf525.png" width="800" />
+            <img alt="banner2" class="hidden" height="300" src="./images/banner/cool-guy-having-fun-vacation-wearing-straw-hat-sunglasses-looking-aside-sassy-standing-blu.jpg" width="800" />
+            <img alt="banner3" class="hidden" height="300" src="./images/banner/portrait-tourist-takesoff-sunglasses-saying-wow-staring-impressed-camera-checking-out-cool.jpg" width="800" />
+        </div>
+        <h3 class = "alert-text">NEW COLLECTION!</h3>
+        <div class="banners-container">
+            <div class="banner">
+              <a href="product-page.html">
+                <div class="banner-text"></div>
+              </a>
+            </div>
+            <div class="banner">
+              <a href="product-page.html">
+                <div class="banner-text"></div>
+              </a>
+            </div>
+            <div class="banner">
+              <a href="product-page.html">
+                <div class="banner-text"></div>
+              </a>
+            </div>
+        </div>
+        <p class = "alert-text2">NEW JEANS, HOODIES, AND SHIRTS NOW AVAILABLE.</p>
+        <!-- Dynamic Product Section -->
+        <div class="products" id="products">
+            <h2>Our Products</h2>
+            <div class="category-filters">
+                <button onclick="filterProducts('shirts')">Shirts</button>
+                <button onclick="filterProducts('pants')">Pants</button>
+                <button onclick="filterProducts('hoodies')">Hoodies</button>
+                <button onclick="filterProducts('all')">Show All</button>
+            </div>
+            <!-- Products Placeholder -->
+            <div id="product-list" class="product-list">
+                <!-- Products will be dynamically rendered here -->
+            </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form" id="contact-form">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <input placeholder="Name" type="text" required class="form-input" />
+                </div>
+                <div class="form-group">
+                    <input placeholder="Email" type="email" required class="form-input" />
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Message" rows="5" required class="form-textarea"></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+    </div>
+    <div id="cart-sidebar" class="cart-sidebar">
+        <button id="close-cart-btn" class="close-btn">×</button>
+        <h2>Your Cart</h2>
+        <div id="cart-items" class="cart-items">
+            <!-- Cart items will be dynamically rendered here -->
+        </div>
+        <div class="cart-total">
+            <p>Total: <span id="cart-total">$0.00</span></p>
+            <button id="checkout-btn" class="checkout-btn">Checkout</button>
+            <!-- Clear Cart Button -->
+            <button id="clear-cart-btn" class="clear-cart-btn">Clear Cart</button>
+        </div>
+    </div>
+    <div class="footer">
+        <p>© 2024 Urban Apparel. All rights reserved.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

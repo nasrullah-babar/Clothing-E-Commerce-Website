@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Arrivals - Streetwear</title>
+    <link rel="stylesheet" href="product-page.css">
+    <script src="favicon.js"></script>
+</head>
+<body>
+    <!-- Sidebar Menu -->
+    <div id="menu-sidebar" class="menu-sidebar">
+        <button id="close-menu-btn" class="close-btn">×</button>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="index.html#contact-form">Contact</a></li>
+        </ul>
+    </div>
+    <button id="menu-btn" class="menu-btn">☰</button>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">URBAN APPAREL</a>
+            </div>
+            <div class="cart">
+                <button id="cart-btn" class="cart-btn">🛒</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Slideshow Banner -->
+    <section class="banner">
+        <div class="slideshow-container">
+            <div class="slide fade">
+                <img src="banner1.webp" alt="banner1">
+            </div>
+            <div class="slide fade">
+                <img src="banner2.jpg" alt="banner2">
+            </div>
+            <div class="slide fade">
+                <img src="banner3.webp" alt="banner3">
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Section -->
+    <section id="products" class="products">
+        <div class="product-filter">
+            <select id="category">
+                <option value="all">All</option>
+                <option value="hoodies">Hoodies</option>
+                <option value="t-shirts">T-shirts</option>
+                <option value="pants">Pants</option>
+            </select>
+            <button id="filter-btn" class="filter-btn">Filter</button>
+        </div>
+
+        <div class="product-gallery">
+            <!-- Products dynamically rendered here -->
+        </div>
+    </section>
+
+    <!-- Cart Sidebar -->
+    <div id="cart-sidebar" class="cart-sidebar">
+        <button id="close-cart-btn" class="close-btn">×</button>
+        <h2>Your Cart</h2>
+        <div id="cart-items" class="cart-items">
+            <!-- Cart items will be dynamically rendered here -->
+        </div>
+        <div class="cart-total">
+            <p>Total: <span id="cart-total">$0.00</span></p>
+            <button id="checkout-btn" class="checkout-btn">Checkout</button>
+            <!-- Clear Cart Button -->
+            <button id="clear-cart-btn" class="clear-cart-btn">Clear Cart</button>
+        </div>
+    </div>
+
+    <footer id="contact" class="footer">
+        <p>© 2024 Urban Apparel Official. All rights reserved.</p>
+    </footer>
+
+    <script src="product-page.js"></script>
+</body>
+</html>

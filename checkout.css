@@ -1,0 +1,238 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #000000;
+    padding: 10px 0;
+}
+
+.menu-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 1000;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.menu-sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #111;
+    color: white;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    overflow-y: auto;
+    transition: left 0.3s ease-in-out;
+}
+
+.menu-sidebar ul {
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+}
+
+.menu-sidebar li {
+    margin: 20px 0;
+}
+
+.menu-sidebar a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.navbar .logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.navbar .logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Checkout Styles */
+.checkout {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    background-color: #fff;
+}
+
+.checkout-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.order-details {
+    flex: 1;
+    margin-right: 20px;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.payment-form {
+    width: 300px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 1.8em;
+    color: #000000;
+}
+
+h3 {
+    font-size: 1.5em;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.checkout-items {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.checkout-items div {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.checkout-items p {
+    font-size: 1.2em;
+    color: #000000;
+}
+
+.checkout-summary p {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.checkout-summary {
+    padding-top: 10px;
+}
+
+/* Input Fields */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Confirm Pay Button */
+.confirm-pay-btn {
+    width: 100%;
+    background-color: #000000;
+    color: #fff;
+    padding: 15px;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.confirm-pay-btn:hover {
+    background-color: #000000;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .checkout-container {
+        flex-direction: column;
+    }
+
+    .payment-form {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+.clear-cart-btn {
+    width: 100%;
+    background-color: red;
+    color: #fff;
+    padding: 15px;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.clear-cart-btn:hover {
+    background-color: darkred;
+}
